@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# This script prints numbers 1-20 and adds country-specific bad luck messages for certain numbers
+for file in *; do
+    if [[ -f "$file" ]]; then
+        # Check if the filename contains a dash
+        if [[ "$file" == *-* ]]; then
+            # Extract and print the part after the first dash
+            echo "${file#*-}"
+        else
+            # If no dash, print the full filename
+            echo "$file"
+        fi
+    fi
+done
