@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# List all processes in a user-friendly format with hierarchy
+ps -ef --forest
